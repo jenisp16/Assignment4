@@ -1,0 +1,32 @@
+//Name:Jenis Patel
+//Student ID:21CE093
+import java.util.*;
+public class pract_1 {
+ public static void main(String[] args) {
+ int a=10;
+ int b=0;
+ try
+ {
+ System.out.println("hello");//before exception occured.
+ System.out.println("hello world "+a/b);//the line in 
+which exception occurs does not print anything.
+ System.out.println("world");//terminated due to 
+exception in above line so not printed.
+ }
+// catch(ArithmeticException e)
+// {
+// System.out.println(e);
+// System.out.println("exception handled");
+// }
+ catch (Exception E)
+ {
+ System.out.println(E);
+ System.out.println("Exception handled by parent 
+class");
+ }
+ finally
+ {
+ System.out.println("Finally block executed");
+ }
+ }
+}
